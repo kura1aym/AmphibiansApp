@@ -1,4 +1,4 @@
-package com.example.amphibiansapp.ui.theme
+package com.example.amphibians.ui.theme
 
 import android.app.Activity
 import android.os.Build

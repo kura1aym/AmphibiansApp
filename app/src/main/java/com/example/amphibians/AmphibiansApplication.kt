@@ -1,7 +1,8 @@
-package com.example.amphibiansapp
+package com.example.amphibians
 
 import android.app.Application
 
 class AmphibiansApplication : Application() {
 
+    val container: Any
 }

@@ -1,4 +1,4 @@
-package com.example.amphibiansapp
+package com.example.amphibians
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.amphibians.ui.AmphibiansApp
-import com.example.amphibiansapp.ui.theme.AmphibiansAppTheme
+import com.example.amphibians.ui.theme.AmphibiansAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
