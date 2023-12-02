@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.amphibians.R
+import com.example.amphibians.ui.screens.AmphibiansViewModel
 import com.example.amphibians.ui.screens.HomeScreen
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -34,8 +35,11 @@ fun AmphibiansApp() {
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colorScheme.background
         ) {
-
+            val amphibiansViewModel: AmphibiansViewModel =
+                viewModel(factory = AmphibiansViewModel.Factory)
             HomeScreen(
+                amphibiansUiState = amphibiansViewModel.amphibiansUiState,
+                retryAction = amphibiansViewModel::getAmphibians,
                 modifier = Modifier.fillMaxSize(),
                 contentPadding = it
             )
